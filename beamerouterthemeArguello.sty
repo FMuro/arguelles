@@ -9,17 +9,19 @@
 \setbeamertemplate{navigation symbols}{}
 
 % Headline navigation
-\defbeamertemplate*{headline}{Arguello}{
- \begin{beamercolorbox}[ht=1.2em,dp=1.6em]{section in head/foot}
-  {\usebeamerfont{headline section}\insertnavigation{\paperwidth}}
- \end{beamercolorbox}
-}
+% \defbeamertemplate*{headline}{Arguello}{
+%  \begin{beamercolorbox}[ht=1.2em,dp=1.6em]{section in head/foot}
+%   {\usebeamerfont{headline section}\insertnavigation{\paperwidth}}
+%  \end{beamercolorbox}
+% }
+%\defbeamertemplate*{headline}{Arguello}{\vskip-1cm}
 
 % Frame title
 \defbeamertemplate*{frametitle}{Arguello}{
- \begin{beamercolorbox}[wd=.95\paperwidth]{normal text}
-  {\usebeamerfont{frame title}\insertframetitle}\hfill
-  {\usebeamerfont{frame subtitle}\insertframesubtitle}
+    \ifbeamercolorempty[bg]{frametitle}{}{\nointerlineskip}
+    \begin{beamercolorbox}[sep=.3em,wd=\paperwidth]{section in head/foot}
+    \vskip-.8ex{\usebeamerfont{frame title}\insertframetitle}\hfill
+    {\usebeamerfont{frame subtitle}\insertframesubtitle}\vskip2pt
  \end{beamercolorbox}
 }
 
