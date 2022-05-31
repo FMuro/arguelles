@@ -1,4 +1,4 @@
-% arguelles v1.2.1
+% Arguello v1.2.1
 % Copyright (c) 2020 Michele Piazzai. Contact: michele.piazzai@uc3m.es
 % This work is released under the MIT License and is free to use, copy, modify,
 % merge, publish, distribute, sublicense, and/or sell. See LICENSE for details.
@@ -24,7 +24,7 @@
 }
 
 % Title page
-\defbeamertemplate*{title page}{Arguelles}{
+\defbeamertemplate*{title page}{Arguello}{
  \vfill\begin{beamercolorbox}{inverted text}
   {\usebeamerfont{title}\inserttitle}\par
   {\usebeamerfont{subtitle}\insertsubtitle}\par\bigskip
@@ -35,9 +35,9 @@
 }
 
 % Standout frame
-\providebool{Arguelles@standout}
+\providebool{Arguello@standout}
 \define@key{beamerframe}{standout}[true]{
- \booltrue{Arguelles@standout}
+ \booltrue{Arguello@standout}
  \begingroup
  \setbeamertemplate{background}{}
  \beamer@frametopskip=0pt plus 1fill\relax%
@@ -46,8 +46,8 @@
  \large\centering
 }
 \pretocmd{\beamer@reseteecodes}{
- \ifbool{Arguelles@standout}{
-  \endgroup\boolfalse{Arguelles@standout}
+ \ifbool{Arguello@standout}{
+  \endgroup\boolfalse{Arguello@standout}
  }{}
 }{}{}
 

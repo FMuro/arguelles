@@ -1,13 +1,13 @@
 <!--
-- arguelles v1.2.1
+- Arguello v1.2.1
 - Copyright (c) 2020 Michele Piazzai. Contact: michele.piazzai@uc3m.es
 - This work is released under the MIT License and is free to use, copy, modify,
 - merge, publish, distribute, sublicense, and/or sell. See LICENSE for details.
 -->
 
-# arguelles
+# Arguello
 
-Arguelles is a beamer theme that helps you create beautiful presentations. It aims for simplicity and readability by following best practices of graphic design. The layout is elegant but subtle, so as to keep the audience's attention on your content. This is brought to life by Alegreya, one of the 53 Fonts of the Decade selected by the Association Typographique Internationale (2011).
+Arguello is a beamer theme that helps you create beautiful presentations. It aims for simplicity and readability by following best practices of graphic design. The layout is elegant but subtle, so as to keep the audience's attention on your content. This is brought to life by Alegreya, one of the 53 Fonts of the Decade selected by the Association Typographique Internationale (2011).
 
 The theme requires the packages [tikz](https://ctan.org/pkg/pgf), [microtype](https://ctan.org/pkg/microtype), [makecell](https://ctan.org/pkg/makecell), [Alegreya](https://ctan.org/pkg/alegreya), [cancel](https://ctan.org/pkg/cancel), [euler](https://ctan.org/pkg/euler), and [fontawesome5](https://ctan.org/pkg/fontawesome5) to be installed on your computer. These are included in common LaTeX distributions, such as [MiKTeX](https://ctan.org/pkg/miktex) and [TeXLive](https://ctan.org/pkg/texlive).
 
@@ -15,11 +15,11 @@ The theme requires the packages [tikz](https://ctan.org/pkg/pgf), [microtype](ht
 
 The files `demo.tex` and `demo.pdf` demonstrate the main features of the theme.
 
-![](https://github.com/piazzai/arguelles/blob/master/demo/demo-arguelles.gif)
+![](https://github.com/piazzai/Arguello/blob/master/demo/demo-Arguello.gif)
 
 ## Installation
 
-Arguelles is [hosted on CTAN](https://ctan.org/pkg/beamertheme-arguelles) and distributed as part of MikTex and TeXLive. It can also be installed manually by cloning this repository in your `$HOME/texmf/tex/latex` folder, which is automatically searched by LaTeX. If you do not have this folder, you can [create one](https://www.ias.edu/math/computing/faq/local-latex-style-files).
+Arguello is [hosted on CTAN](https://ctan.org/pkg/beamertheme-Arguello) and distributed as part of MikTex and TeXLive. It can also be installed manually by cloning this repository in your `$HOME/texmf/tex/latex` folder, which is automatically searched by LaTeX. If you do not have this folder, you can [create one](https://www.ias.edu/math/computing/faq/local-latex-style-files).
 
 ## Customization
 
@@ -84,4 +84,4 @@ Both old-style and lining figures are also available in a monospaced version, wh
 
 ## Bugs
 
-If you find any problem using this package, please [create an issue](https://github.com/piazzai/arguelles/issues).
+If you find any problem using this package, please [create an issue](https://github.com/piazzai/Arguello/issues).
