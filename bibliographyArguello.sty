@@ -35,18 +35,5 @@ giveninits=true % print initials, not full names
 \newbibmacro{string+doi}[1]{\iffieldundef{doi}{\iffieldundef{url}{#1}{\href{\thefield{url}}{#1}}}{\href{http://dx.doi.org/\thefield{doi}}{#1}}}
 \DeclareFieldFormat*{title}{\usebibmacro{string+doi}{``#1''}}
 
-% Hyperlink colors
-\hypersetup{
-    colorlinks,
-    citecolor=cobalt,
-	linkcolor=.,
-	anchorcolor=.,
-	citecolor=cobalt,
-	filecolor=.,
-	menucolor=.,
-	runcolor=.,
-	urlcolor=.
-}
-
 % Bibliography symbol
 \setbeamertemplate{bibliography item}{\faBook}
