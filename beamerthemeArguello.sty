@@ -21,6 +21,15 @@
 \usecolortheme{Arguello}
 \usefonttheme{Arguello}
 
+% Enumerate text size
+\setbeamertemplate{itemize/enumerate body begin}{\normalsize}
+\setbeamertemplate{itemize/enumerate subbody begin}{\small}
+\setbeamertemplate{itemize/enumerate subsubbody begin}{\footnotesize}
+
+% Enumerate label style
+\setbeamertemplate{enumerate subitem}{\alph{enumii})}
+\setbeamertemplate{enumerate subsubitem}{(\roman{enumiii})}
+
 % TikZ
 \usetikzlibrary{calc}
 
