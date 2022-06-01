@@ -9,6 +9,8 @@
 
 \usetheme{Arguello}
 
+\bibliography{demo}
+
 \title{Argüello}
 \subtitle{Simple, typographic beamer theme}
 \date{}
@@ -19,7 +21,7 @@
 
 \frame[plain]{\titlepage
       \begin{tikzpicture}[remember picture,overlay]
-            \node[xshift=-3cm,yshift=1.65cm] at (current page.south east) {\includegraphics[scale=.04]{logo_us_blanco}};
+            \node[xshift=-3cm,yshift=1.65cm] at (current page.south east) {\includegraphics[scale=.04]{logo_us_blanco.png}};
       \end{tikzpicture}
 }
 
@@ -73,10 +75,11 @@
                   \end{align*}
             \end{proof}
       \end{theorem}
+      Let's cite a paper by \cite{amiot_2007_structure_triangulated_categories} and another one by \cite{bergh_jasso_thaule_2016_higher_angulations_local}.
 \end{frame}
 
 \begin{frame}[plain]
-      \frametitle{A plain frame has no headline}
+      \frametitle{Frames have no headline}
       \begin{table}
             \small
             \begin{tabular}{rl}
@@ -112,6 +115,13 @@
 
       \url{https://github.com/piazzai/Arguello}
 
+\end{frame}
+
+\begin{frame}[allowframebreaks]
+      \frametitle{References}
+      \framesubtitle{Click on titles}
+      \nocite{*}
+      \printbibliography[heading=none]
 \end{frame}
 
 \ThankYou
