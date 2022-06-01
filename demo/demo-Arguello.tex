@@ -7,16 +7,13 @@
 % merge, publish, distribute, sublicense, and/or sell. See LICENSE for details.
 
 \documentclass{beamer}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
 
 \usetheme{Arguello}
-
-\bibliography{demo}
+\bibliography{demo} % this is the biblatex file, this line should appear after the previous one 
 
 \title{Argüello}
 \subtitle{Simple, typographic beamer theme}
-\date{}
+\date{\today}
 \author{Place Holder}
 \institute{University of \TeX\par\email{username@domain.com}}
 
@@ -27,8 +24,6 @@
             \node[xshift=-3cm,yshift=1.65cm] at (current page.south east) {\includegraphics[scale=.04]{logo_us_blanco.png}};
       \end{tikzpicture}
 }
-
-\Section{Demo}
 
 \begin{frame}
       \frametitle{A frame with title and subtitle}
