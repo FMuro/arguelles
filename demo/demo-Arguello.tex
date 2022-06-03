@@ -1,3 +1,6 @@
+% !TEX program = latexmk
+% !TEX options = -lualatex -synctex=1 -interaction=nonstopmode -file-line-error "%DOC%"
+
 % Arguello v1.2.0
 % Copyright (c) 2020 Michele Piazzai. Contact: michele.piazzai@uc3m.es
 % This work is released under the MIT License and is free to use, copy, modify,
@@ -57,19 +60,20 @@
 \begin{frame}
       \frametitle{A frame with title only}
       \begin{theorem}
-            \[e^{i\pi}+1=0\]
-            \begin{proof}
-                  \begin{equation*}
-                        e^{iz}=\cos{z}+i\sin{z}
-                  \end{equation*}
-                  \center{therefore}
-                  \begin{align*}
-                        e^{i\pi}+1 & \null=\cos\pi+i\sin\pi+1 \\
-                                   & \null=-1+i\times0+1      \\
-                                   & \null=0
-                  \end{align*}
-            \end{proof}
+            The formula $e^{i\pi}+1=\Lambda\cdot\mu_0$ holds.
       \end{theorem}
+      \begin{proof}
+            \begin{equation*}
+                  e^{iz}=\cos{z}+i\sin{z}
+            \end{equation*}
+            \center{therefore}
+            \begin{align*}
+                  e^{i\pi}+1 & \null=\cos\pi+i\sin\pi+1 \\
+                             & \null=-1+i\times0+1      \\
+                             & \null=0
+            \end{align*}
+      \end{proof}
+
       Let's cite a paper by \cite{amiot_2007_structure_triangulated_categories} and another one by \cite{bergh_jasso_thaule_2016_higher_angulations_local}. \alert{Click on years!}
 \end{frame}
 
@@ -77,22 +81,22 @@
       \frametitle{Frames have no headline}
       \begin{table}
             \small
-            \begin{tabular}{rl}
-                  \ttfamily\textbackslash Alegreya              & \Alegreya Lorem ipsum dolor sit amet              \\
-                  \ttfamily\textbackslash AlegreyaExtraBold     & \AlegreyaExtraBold Lorem ipsum dolor sit amet     \\
-                  \ttfamily\textbackslash AlegreyaBlack         & \AlegreyaBlack Lorem ipsum dolor sit amet         \\
-                  \ttfamily\textbackslash AlegreyaMedium        & \AlegreyaMedium Lorem ipsum dolor sit amet        \\
-                  \ttfamily\textbackslash AlegreyaSans          & \AlegreyaSans Lorem ipsum dolor sit amet          \\
-                  \ttfamily\textbackslash AlegreyaSansThin      & \AlegreyaSansThin Lorem ipsum dolor sit amet      \\
-                  \ttfamily\textbackslash AlegreyaSansLight     & \AlegreyaSansLight Lorem ipsum dolor sit amet     \\
-                  \ttfamily\textbackslash AlegreyaSansMedium    & \AlegreyaSansMedium Lorem ipsum dolor sit amet    \\
-                  \ttfamily\textbackslash AlegreyaSansExtraBold & \AlegreyaSansExtraBold Lorem ipsum dolor sit amet \\
-                  \ttfamily\textbackslash AlegreyaSansBlack     & \AlegreyaSansBlack Lorem ipsum dolor sit amet
-            \end{tabular}
+            % \begin{tabular}{rl}
+            %       \ttfamily\textbackslash Alegreya              & \Alegreya Lorem ipsum dolor sit amet              \\
+            %       \ttfamily\textbackslash AlegreyaExtraBold     & \AlegreyaExtraBold Lorem ipsum dolor sit amet     \\
+            %       \ttfamily\textbackslash AlegreyaBlack         & \AlegreyaBlack Lorem ipsum dolor sit amet         \\
+            %       \ttfamily\textbackslash AlegreyaMedium        & \AlegreyaMedium Lorem ipsum dolor sit amet        \\
+            %       \ttfamily\textbackslash AlegreyaSans          & \AlegreyaSans Lorem ipsum dolor sit amet          \\
+            %       \ttfamily\textbackslash AlegreyaSansThin      & \AlegreyaSansThin Lorem ipsum dolor sit amet      \\
+            %       \ttfamily\textbackslash AlegreyaSansLight     & \AlegreyaSansLight Lorem ipsum dolor sit amet     \\
+            %       \ttfamily\textbackslash AlegreyaSansMedium    & \AlegreyaSansMedium Lorem ipsum dolor sit amet    \\
+            %       \ttfamily\textbackslash AlegreyaSansExtraBold & \AlegreyaSansExtraBold Lorem ipsum dolor sit amet \\
+            %       \ttfamily\textbackslash AlegreyaSansBlack     & \AlegreyaSansBlack Lorem ipsum dolor sit amet
+            % \end{tabular}
       \end{table}
       \vfill
       \begin{alert}{Alert!}
-            A plain frame does not show the progress bar but it still appears in the progress bar of other frames unless it is placed after \texttt{\textbackslash ThankYou}.
+            A plain frame does not show the progress bar but it still appears in the progress bar of other frames unless it is placed after \texttt{\textbackslash ThankYou}\footnote{This is a foot note}.
       \end{alert}
 \end{frame}
 
